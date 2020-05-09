@@ -31,10 +31,26 @@ Here is an image shows how the game looks like.
 There are four ghosts in Pack Man, they all have own strategy for catching player.
 
 在吃豆人中， 每个*ghost*都有其相应的属性：颜色，速度，追踪策略
-#### 追踪策略
+
+对于生成Ghost使用的是*工厂模式*，每个Ghost的搜寻策略则采用*策略模式*进行设计
+
+#### search parttern
 Ghost 采用的search算法使用 [*A** 算法](https://en.wikipedia.org/wiki/A*_search_algorithm)。A* 算法作为一种预见性(pre-process)算法。在大多数时候的最优解。
 
 这里我使用了一个最小堆([min-head](https://www.cs.cmu.edu/~tcortina/15-121sp10/Unit06B.pdf))来保存 A*的结果的权重排序。虽然效率可能还不如使用STL库来插入再排序。但最为数据结构实践还是不错的选择。
 
-##### Blinky 小红
-最近的路线， 对于算法来说就是在A*计算权重的时候使用直线距离(两个坐标间的对角线距离)
+#### 小红
+最近的路线， 对于算法来说就是在A*计算权重的时候使用直线距离(欧氏距离)
+
+#### 小紫
+稍微绕远路一点， 计算时采用欧式距离的平方
+
+#### 小蓝 （未实现）
+它的目标距离是player正在行进方向的路口
+
+#### 小黄 （未实现）
+它的在以player为圆心的圆边上进行漫游
+
+## 物理碰撞
+由于是2D环境， 这里采用轴对称包围盒（Axis-Aligned Bounding Box）的碰撞检测模式，即判断任意两个（无旋转）矩形的任意一边是否无间距，从而判断是否碰撞。
+
