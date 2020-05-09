@@ -1,3 +1,3 @@
-/Users/romens/Documents/graphic/bean/build/CMakeFiles/rebuild_cache.dir
-/Users/romens/Documents/graphic/bean/build/CMakeFiles/edit_cache.dir
-/Users/romens/Documents/graphic/bean/build/CMakeFiles/tetris.dir
+/Users/romens/Documents/graphic/LuckPackMan/build/CMakeFiles/rebuild_cache.dir
+/Users/romens/Documents/graphic/LuckPackMan/build/CMakeFiles/edit_cache.dir
+/Users/romens/Documents/graphic/LuckPackMan/build/CMakeFiles/packman.dir

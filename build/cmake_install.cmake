@@ -1,4 +1,4 @@
-# Install script for directory: /Users/romens/Documents/graphic/bean
+# Install script for directory: /Users/romens/Documents/graphic/LuckPackMan
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -40,5 +40,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/Users/romens/Documents/graphic/bean/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/Users/romens/Documents/graphic/LuckPackMan/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -14,6 +14,7 @@ set(CMAKE_CXX20_COMPILE_FEATURES "")
 
 set(CMAKE_CXX_PLATFORM_ID "Darwin")
 set(CMAKE_CXX_SIMULATE_ID "")
+set(CMAKE_CXX_COMPILER_FRONTEND_VARIANT "")
 set(CMAKE_CXX_SIMULATE_VERSION "")
 
 
@@ -23,6 +24,7 @@ set(CMAKE_CXX_COMPILER_AR "")
 set(CMAKE_RANLIB "/Library/Developer/CommandLineTools/usr/bin/ranlib")
 set(CMAKE_CXX_COMPILER_RANLIB "")
 set(CMAKE_LINKER "/Library/Developer/CommandLineTools/usr/bin/ld")
+set(CMAKE_MT "")
 set(CMAKE_COMPILER_IS_GNUCXX )
 set(CMAKE_CXX_COMPILER_LOADED 1)
 set(CMAKE_CXX_COMPILER_WORKS TRUE)
@@ -71,6 +73,7 @@ endif()
 
 
 
+set(CMAKE_CXX_IMPLICIT_INCLUDE_DIRECTORIES "/Library/Developer/CommandLineTools/usr/include/c++/v1;/usr/local/include;/Library/Developer/CommandLineTools/usr/lib/clang/8.0.0/include;/Library/Developer/CommandLineTools/usr/include;/usr/include")
 set(CMAKE_CXX_IMPLICIT_LINK_LIBRARIES "c++")
 set(CMAKE_CXX_IMPLICIT_LINK_DIRECTORIES "/usr/lib;/usr/local/lib")
 set(CMAKE_CXX_IMPLICIT_LINK_FRAMEWORK_DIRECTORIES "/Library/Frameworks;/System/Library/Frameworks")
